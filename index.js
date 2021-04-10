@@ -2,7 +2,7 @@ const functions = require('firebase-functions');
 const request = require('request-promise');
 const axios = require('axios');
 
-const token = 'Bearer /rFeJHsIycsqz+XW1LLM4S5+Z+vDJgfdZ+i7kpbiGbHQ0o6zdEPr3pabd+OHdL2R46MtBOC/H3zIxvZhjupr3BWiKFS4vdQAHPap21U+nScrwXrF12MeOyDGfYnfp9NpO19J0kRfq733k3a2CWvBlwdB04t89/1O/w1cDnyilFU='
+const token = 'Bearer xxxxxxxx'
 
 const LINE_MESSAGING_API = 'https://api.line.me/v2/bot/message';
 const LINE_HEADER = {
@@ -54,7 +54,7 @@ const replyText = request => {
 const NewPost = res => {
     return request({
         method: `GET`,
-        uri: `https://graph.facebook.com/v10.0/242579006135737/feed?access_token=EAAGQFPzuZBZAgBAFniOZCeMW8mviaX2daCJirJToV80fjmZAFpnZCZB5bFiVEKB6ANTZCRJBiJOsoopcieuX4rOaLZC1UFQpilo45NiQeBro6RgCZC33pwRbFQE0fxb9UNJUDAE9vAG5ZBBFeV9v2YtNOw376D1wpZBcq30bb0iZCIOSHGErqZCjlTvLYZAxVZBuSSQnwM1mwk9VoK9YgZDZD&pretty=0&fields=picture%2Ccreated_time%2Cmessage%2Cvia&limit=25&before=QVFIUkJxWlFrMkRHTHBxZAW83WUp5ZAFZA2NHcyQXRmTEYtS3JWbFJLVUg2bWVKRXQxQWlfei16dERjSE1DWlV0RGdjWmpRZAWVZAcHU1dmw1ZA0FuSFRWNE5CelJicU5jcEZAQMVRqb0NpUDBnakdpd1pWNXRfWkpJSWkwcXFDWXlVWGlrWDRn`,
+        uri: `yyyy`,
         json: true
     }).then((response) => {
         const message = JSON.stringify(response.data[0])
